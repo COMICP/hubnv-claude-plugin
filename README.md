@@ -22,7 +22,7 @@ HubNV under Settings → Connected apps.
 - **hubnv-leads**: recent form responses.
 - **hubnv-edit-site**: draft website edits, then publish on request.
 - **hubnv-posts**: draft Facebook and Instagram posts, preview them, and schedule them when you agree.
-- **hubnv-drafts**: new forms and questions, storefront listings, NV Campaign drafts, and connecting a domain.
+- **hubnv-drafts**: new forms and questions, setting up a storefront, storefront listings, NV Campaign drafts, and connecting a domain.
 - **hubnv-daily-check**: a short check-in for a scheduled task.
 
 Help: https://hubnv.com/documentation/account/connected-apps

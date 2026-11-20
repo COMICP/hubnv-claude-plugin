@@ -1,6 +1,6 @@
 ---
 name: hubnv-drafts
-description: Make or change HubNV forms and their questions, storefront listings and NV Campaign drafts, or connect the person's own domain to a website. Use when the person asks to build a form, add or edit a listing, plan a campaign, or put their domain on their site.
+description: Make or change HubNV forms and their questions, set up a storefront, storefront listings and NV Campaign drafts, or connect the person's own domain to a website. Use when the person asks to build a form, open a shop, add or edit a listing, plan a campaign, or put their domain on their site.
 ---
 
 # HubNV drafts
@@ -15,6 +15,14 @@ Find the business first: `companies__list`.
 3. Choice questions take the full list of `options` each time.
 4. A live form can be reworded here; it can't lose or retype questions. Changes show once the person publishes
    (`forms__publish`, `confirm: true`).
+
+**Setting up a storefront** (when `storefront__create_listing` says there is none)
+1. `storefront__set_up` with the shop's title and currency.
+2. `storefront__create_product_type` for each kind of item sold, then `storefront__add_field` for its details and
+   `storefront__create_category` for how it's browsed. Check `storefront__list_categories` before adding one.
+3. Draft a few listings (below) and show them.
+4. `storefront__finish_setup` puts the shop live on every published website and makes its inquiry form. Only with
+   the person's yes (`confirm: true`); pass `navLinkSiteId` if they want a Shop link in a website's menu.
 
 **Storefront listings**
 1. `storefront__create_listing` makes a draft. The description is plain text. Photos are added in HubNV.
