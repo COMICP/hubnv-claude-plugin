@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hubnv": {
+      "type": "http",
+      "url": "https://mcp.hubnv.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "hubnv",
+  "owner": { "name": "HubNV" },
+  "plugins": [
+    {
+      "name": "hubnv",
+      "source": "./",
+      "description": "Run your HubNV businesses from Claude: status checks, leads, website edits, social posts and drafts with previews."
+    }
+  ]
+}

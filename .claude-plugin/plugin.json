@@ -1,0 +1,10 @@
+{
+  "name": "hubnv",
+  "description": "Run your HubNV businesses from Claude: status checks, leads, post and Meta ads results, website edits, social posts, forms, storefront listings and NV Campaigns as drafts with previews, and scheduling or publishing when you say so.",
+  "version": "0.1.0",
+  "author": {
+    "name": "HubNV"
+  },
+  "homepage": "https://hubnv.com/documentation/account/connected-apps",
+  "license": "MIT"
+}
