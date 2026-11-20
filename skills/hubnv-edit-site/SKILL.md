@@ -13,6 +13,8 @@ description: Edit a HubNV website - text, buttons, sections, page titles and sea
    - a whole block: `sites__update_block`
    - a new block or section: `sites__insert_block`, `sites__insert_section`
    - a page's title, address or search text: `sites__update_page_meta`
+   - the header or footer: read it with `sites__header_footer` (with the draftId once there is one), then
+     `sites__update_chrome_element`, `sites__insert_chrome_element` or `sites__update_band`
 4. Edits land in a draft named "Claude changes". Nothing is live. After editing, read the page again with the draftId
    the edit returned, and tell the person what changed. Show it with `previews__show` (`kind: site`, the site id,
    `draftId`, and `page` for a page other than home).

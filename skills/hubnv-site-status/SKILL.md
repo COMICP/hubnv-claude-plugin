@@ -12,6 +12,8 @@ description: Check how a HubNV business is doing - websites live or not, domains
 3. Only if something needs a closer look:
    - a site not published, or a domain or SSL status that isn't active: `sites__status` with `siteId`
    - traffic: `sites__analytics` (default 30 days)
+   - how posts, campaigns, forms and traffic are doing: `performance__digest` (HubNV's own figures)
+   - ad results: `ads__results` gives a link to them in HubNV; their figures aren't shared with Claude
 4. Report in a few lines: what is live, what needs attention, and the next step. Don't list what is fine at length.
 
 Never publish, edit or report problems as part of a status check.

@@ -1,6 +1,6 @@
 ---
 name: hubnv-drafts
-description: Make or change HubNV forms and their questions, set up a storefront, storefront listings and NV Campaign drafts, or connect the person's own domain to a website. Use when the person asks to build a form, open a shop, add or edit a listing, plan a campaign, or put their domain on their site.
+description: Make or change HubNV forms and their questions, set up a storefront, storefront listings, Ad Materials and NV Campaign drafts, connect the person's own domain to a website, or hand ad work and spending to NV. Use when the person asks to build a form, open a shop, add or edit a listing, write ad copy, plan a campaign, boost or change ads, or put their domain on their site.
 ---
 
 # HubNV drafts
@@ -25,10 +25,25 @@ Find the business first: `companies__list`.
    the person's yes (`confirm: true`); pass `navLinkSiteId` if they want a Shop link in a website's menu.
 
 **Storefront listings**
-1. `storefront__create_listing` makes a draft. The description is plain text. Photos are added in HubNV.
+1. `storefront__create_listing` makes a draft. The description is plain text.
+   - Details, photos and variants on a draft: `storefront__catalog` for the field and option keys, then
+     `storefront__set_listing_fields`, `storefront__add_photos` (library files from `library__search`) and
+     `storefront__create_variant`.
+   - Featuring: `storefront__feature_listings`, for listings made here. Changing a category
+     (`storefront__update_category`) shows at once on a live shop, so only with `confirm: true`.
 2. To edit a draft listing, use `storefront__update_draft_listing` and name only the fields that change.
 3. A live listing changes at once. Use `storefront__update_published_listing` with `confirm: true`, only after the
    person agrees to the exact change.
+
+**Ad Materials**
+1. `marketing__create_material` saves a material pending; the person approves it in HubNV.
+2. `marketing__create_pack`, then `marketing__attach_material` for approved materials. Packs made here can be renamed
+   or changed; other packs are changed in HubNV.
+
+**Handing work to NV**
+Ad results and spending stay in HubNV. For a boost, an ad change, launching a campaign or anything else these tools
+don't do, `nv__handoff` with the request in the person's words. Give the person the returned link: NV plans it there and
+they approve it. `nv__handoff_status` says where it stands.
 
 **NV Campaigns**
 1. `campaigns__create_draft` with a name and dates (starting tomorrow or later). Add the goal, channels and budget if

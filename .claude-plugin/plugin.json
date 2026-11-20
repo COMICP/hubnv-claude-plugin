@@ -1,7 +1,7 @@
 {
   "name": "hubnv",
-  "description": "Run your HubNV businesses from Claude: status checks, leads, post and Meta ads results, website edits, social posts, forms, storefront listings and NV Campaigns as drafts with previews, and scheduling or publishing when you say so.",
-  "version": "0.1.2",
+  "description": "Run your HubNV businesses from Claude: status checks, leads, performance summaries, website edits, social posts, forms, storefronts, Ad Materials and NV Campaigns as drafts with previews, publishing when you say so, and handing ad work to NV for your approval.",
+  "version": "0.2.0",
   "author": {
     "name": "HubNV"
   },
