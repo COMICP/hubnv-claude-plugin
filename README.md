@@ -11,8 +11,8 @@ see a preview of each before you decide; connect your own domain; and schedule o
    address `https://mcp.hubnv.com/mcp`.
 2. Sign in with your HubNV login and select **Allow**.
 
-Claude sees only the businesses you can open in HubNV, with your role's permissions. It asks before it first edits or
-publishes, and it cannot delete your websites, forms, listings, posts or campaigns, boost a post, change billing, spend
+Claude sees only the businesses you can open in HubNV, with your role's permissions. It asks before it publishes
+anything, and it cannot delete your websites, forms, listings, posts or campaigns, boost a post, change billing, spend
 on ads or change your team. Disconnect any time in
 HubNV under Settings → Connected apps.
 

@@ -9,8 +9,8 @@ description: Draft, preview and schedule a HubNV business's Facebook and Instagr
 2. For photos, search the library: `library__search` with `type: image`. Use the returned ids as `media`.
 3. `socials__create_draft_post` with the caption, destinations, media and a planned time (`whenToPostUtc`, ISO 8601 UTC).
    An Instagram post with 2 or more images needs `instagramAspect`.
-4. Show it before asking: `previews__show` with `kind: socialPost` and the post id. Give the person the picture and the
-   review link.
+4. Show it before asking: `previews__show` with `kind: socialPost` and the post id. Give the person the review link,
+   and the picture when one comes back.
 5. To change it, `socials__update_draft_post` with only the fields that change, then show it again.
 6. Schedule only after the person agrees to that post and time: `socials__schedule_post` with `confirm: true`.
 
